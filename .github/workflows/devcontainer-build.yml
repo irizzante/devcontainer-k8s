@@ -23,5 +23,5 @@ jobs:
       - name: Build and run Dev Container task
         uses: devcontainers/ci@v0.3
         with:
-          imageName: ghcr.io/irizzante/devcontainer-k8s:${GITHUB_REF_NAME}
+          imageName: ghcr.io/irizzante/devcontainer-k8s:${{ github.ref_name }}
           push: always
